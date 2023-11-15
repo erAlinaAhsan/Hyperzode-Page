@@ -11,15 +11,24 @@
 <body>
     <nav class="flex-div">
         <div class="nav-left">
-            <img src="info.jpg">
+            <img src="info.jpg" class="info">
         </div>
         <div class="nav-middle">
-            <marquee>High demand. Order can be delayed</marquee>
+            <marquee scrollamount="8">
+                High demand. Order can be delayed
+            </marquee>
         </div>
         <div class="nav-right">
-            <img src="close.png">
+            <img src="close.png" class="close" id="closeButton">
         </div>
+        <script>
+            var closeButton = document.getElementById('closeButton');
+            closeButton.addEventListener('click', function () {
+                document.querySelector('.flex-div').style.display = 'none';
+            });
+        </script>
     </nav>
+
     <nav class="flex-div1">
         <div class="nav-left1">
             <img src="bars.png" class="bars">
@@ -27,13 +36,13 @@
 
         </div>
         <div class="nav-right1">
-            <button class="btn">Login</button>
+            <h4 class="btn">Login</h4>
         </div>
     </nav>
 
     <div class="container">
         <img src="Del.gif" class="del">
-        <div>
+        <div class="content">
             <h1>Welcome</h1><br>
             <p>Bring the store to your door!</p><br>
             <input type="text" placeholder="Search for area and street name">
