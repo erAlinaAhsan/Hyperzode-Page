@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+    <title>Hyperzod Page</title>
+</head>
+
+<body class="font-poppins">
+    <nav class="flex items-center bg-black text-white">
+        <div class="flex-none">
+            <img src="info.jpg" class="rounded-full h-10 w-10">
+        </div>
+        <div class="flex-grow">
+            <marquee scrollamount="8">
+                High demand. Order can be delayed
+            </marquee>
+        </div>
+        <div class="flex-none">
+            <img src="close.png" class="rounded-full h-10 w-10 cursor-pointer" id="closeButton">
+        </div>
+        <script>
+            var closeButton = document.getElementById('closeButton');
+            closeButton.addEventListener('click', function () {
+                document.querySelector('.flex').style.display = 'none';
+            });
+        </script>
+    </nav>
+
+    <nav class="flex items-center justify-between p-4 bg-white shadow-sticky top-0 z-10">
+        <div class="flex items-center">
+            <img src="bars.png" class="h-6 w-6 mr-2">
+            <img src="logo.png" class="h-8 w-8">
+        </div>
+        <div>
+            <h4 class="btn">Login</h4>
+        </div>
+    </nav>
+
+    <div class="container flex justify-between flex-wrap">
+        <img src="Del.gif" class="del w-full md:w-1/2">
+        <div class="content w-full md:w-1/2 md:pl-8">
+            <h1 class="text-4xl mt-8 md:mt-0">Welcome</h1>
+            <p class="text-xl">Bring the store to your door!</p>
+            <input type="text" placeholder="Search for area and street name"
+                class="w-full mt-4 p-4 bg-gray-200 border border-gray-500 rounded">
+        </div>
+    </div>
+
+    <footer
+        class="flex flex-wrap justify-evenly items-center text-medium h-48 bg-black text-white border-t-2 border-white">
+        516 N Ogden Avde Suite 200 Chicago, IL -60642
+        <div class="mt-4">Privacy Policy<br>Contact</div>
+    </footer>
+    <footer class="low-footer flex flex-wrap items-start h-16 pl-8 pt-4">
+        All rights reserved
+    </footer>
+</body>
+
+</html>

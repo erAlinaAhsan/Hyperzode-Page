@@ -85,8 +85,53 @@ nav {
     font-weight: 600;
     font-size: 12px;
 } */
+.sidebar {
+    background: #fff;
+    width: 12%;
+    height: 100vh;
+    position: fixed;
+    top: 0;
+    padding-left: 2%;
+    padding-top: 80px;
+}
 
 
+.shortcut-links a {
+    display: flex;
+    align-items: center;
+    margin-bottom: 30px;
+    margin-top: 60px;
+    width: fit-content;
+    flex-wrap: wrap;
+    color: rgb(64, 64, 64);
+    text-decoration: none;
+}
+
+
+.shortcut-links p {
+    font-size: 14px;
+}
+
+.shortcut-links a img {
+    width: 20px;
+}
+
+.sidebar hr {
+    border: 0;
+    height: 1px;
+    background: #ccc;
+    width: 85%;
+}
+
+.small-sidebar {
+    margin-left: 0;
+    display: none;
+}
+
+.small-sidebar hr {
+    width: 50%;
+    margin-bottom: 25px;
+}
 
 .container {
     display: flex;
@@ -129,6 +174,13 @@ input {
     border: 1px solid #666;
     border-radius: 10px;
     font-size: 16px;
+}
+
+.small-container {
+    /* padding-left: 17%; */
+    overflow-x: hidden;
+    margin-left: 100px;
+
 }
 
 footer {
